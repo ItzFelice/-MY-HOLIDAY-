@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+}
+
+/* Module */
+.section-divider {
+    height: 500px;
+    background-size: cover;
+    background-position: 0% 80%;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topimage {
+    background-image: url("image/15.jpg"); 
+}
+.middleimage{
+    background-image: url("image/10.jpg"); 
+}
+.bottomimage{
+    background-image: url("image/14.jpg"); 
+}
+
+.blackbg-text {
+    font-size: 20px;
+    background-color: black;
+    color: rgb(245, 245, 245);
+    padding: 9px;
+    letter-spacing: 9px;
+}
+
+.sandwich {
+    margin: 60px 10%;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/*Flow*/
+h1,h2 {
+    text-align:center;
+}
+/* Top Content */
+.p-pic {
+    flex-basis: 40%;
+}
+
+.description {
+    flex-basis: 57%;
+    margin-left: 3%;
+    align-self: center;
+}
+
+/* Mid Content*/
+.my-list{
+    flex-basis: 100%;
+}
+
+.beside-list {
+    flex-basis: 50%;
+}
+/* Btm Content*/
+.column{
+    flex-basis: 20%;
+    padding: 0 4px;
+    margin:5px;
+    box-sizing: border-box;
+}
+
+/* Footer */
+.footer {
+    background-color: #888888;
+    height: 100px;
+    display: flex;
+    justify-content:center ;
+    align-items: center
+}
+
+.button{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding:10px;
+    margin: 0 10px;
+}
+
+/* Media Query */
+/* Tablets */
+@media screen and (max-width: 800px) {
+       /* Top Content */
+    .p-pic {
+        flex-basis: 100%;
+    }
+
+    .description {
+        flex-basis: 100%;
+    }
+
+    /* Mid Content*/
+    .my-list{
+        flex-basis: 100%;
+    }
+
+    .beside-list {
+        flex-basis: 100%;
+    }
+    /* Btm Content*/
+    .column{
+        flex-basis: 50%;
+        padding: 0 4px;
+        margin:10px;
+        box-sizing: border-box;
+    } 
+}
+
+/*Smartphone*/
+@media screen and (max-width: 600px) {
+
+ /* Btm Content*/
+ .column{
+     flex-basis: 100%;
+ } 
+}
+
+    
